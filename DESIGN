@@ -1,0 +1,19 @@
+The server should support (n) nodes that can be configured as follows:
+
+peer node1 {
+  host = node1.example.com
+  port = 6543
+}
+
+peer node2 {
+  host = node2.example.com
+  port = 7654
+}
+
+Or at least something like it ;)
+
+Furthermore it should only ask the peers for information when a request is
+received. And it should use Berkeley DB or something similar to store results
+on disk.
+
+I could use gross, valiant and other greylist daemons as an example.
